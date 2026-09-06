@@ -12,6 +12,7 @@ A fully responsive and adaptive Next.js emergency operations app inspired by BAR
 - Live activity behavior with auto-refresh simulation and event feed
 - Real-time style summary cards and status indicators
 - Search and filter controls by domain and priority
+- 911 caller guidance console with suggested questions, immediate actions, and transcript logging
 - Mobile-first responsive layout that adapts to tablet and desktop
 
 ## Tech stack

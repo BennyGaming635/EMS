@@ -243,6 +243,79 @@ button:hover {
   padding: 0.5rem;
 }
 
+.caller-assist {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.assist-header {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.assist-header h2 {
+  margin: 0;
+}
+
+.assist-summary {
+  margin: 0;
+  color: var(--muted);
+}
+
+.assist-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.assist-grid h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.question-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.question-list button {
+  text-align: left;
+  background: #eff6ff;
+  color: #1e3a8a;
+  border-color: #93c5fd;
+}
+
+.question-list button:hover {
+  background: #dbeafe;
+}
+
+.action-list {
+  margin: 0;
+  padding-left: 1.05rem;
+  display: grid;
+  gap: 0.4rem;
+  color: var(--muted);
+}
+
+.custom-question {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.transcript {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.transcript li {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  background: #fbfdff;
+}
+
 @media (min-width: 760px) {
   .controls {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -261,5 +334,14 @@ button:hover {
 
   .app-shell {
     padding: 1.5rem;
+  }
+
+  .assist-header {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .assist-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
