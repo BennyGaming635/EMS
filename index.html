@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Emergency Management System</p>
+        <h1>Incident Warnings and Advice</h1>
+      </div>
+      <p id="lastUpdated" class="updated"></p>
+    </header>
+
+    <main>
+      <section class="summary" aria-label="Summary cards">
+        <article>
+          <h2 id="totalIncidents">0</h2>
+          <p>Total Incidents</p>
+        </article>
+        <article>
+          <h2 id="watchActCount">0</h2>
+          <p>Watch &amp; Act</p>
+        </article>
+        <article>
+          <h2 id="adviceCount">0</h2>
+          <p>Advice</p>
+        </article>
+        <article>
+          <h2 id="emergencyCount">0</h2>
+          <p>Emergency Warning</p>
+        </article>
+      </section>
+
+      <section class="controls" aria-label="Incident controls">
+        <label>
+          Search area
+          <input id="searchInput" type="search" placeholder="Search by location or incident" />
+        </label>
+        <label>
+          Filter severity
+          <select id="severityFilter">
+            <option value="all">All severities</option>
+            <option value="Emergency Warning">Emergency Warning</option>
+            <option value="Watch and Act">Watch and Act</option>
+            <option value="Advice">Advice</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="layout">
+        <section class="panel map-panel" aria-label="Regional map">
+          <h2>Regional Summary</h2>
+          <div class="region-grid" id="regionGrid"></div>
+        </section>
+
+        <section class="panel" aria-label="Incidents list">
+          <h2>Current Incidents</h2>
+          <ul id="incidentList" class="incident-list"></ul>
+        </section>
+      </section>
+
+      <section class="layout">
+        <section class="panel" aria-label="Preparedness">
+          <h2>Preparedness Actions</h2>
+          <ul class="checklist">
+            <li>Check local emergency warnings every 15 minutes during active events.</li>
+            <li>Prepare a relocation plan for family members and pets.</li>
+            <li>Keep emergency kits with water, first-aid supplies, and medication.</li>
+            <li>Charge communication devices and keep backup power options available.</li>
+          </ul>
+        </section>
+
+        <section class="panel" aria-label="Emergency contacts">
+          <h2>Emergency Contacts</h2>
+          <dl class="contacts">
+            <div>
+              <dt>Emergency Services</dt>
+              <dd>000</dd>
+            </div>
+            <div>
+              <dt>State Emergency Service</dt>
+              <dd>132 500</dd>
+            </div>
+            <div>
+              <dt>Power Faults</dt>
+              <dd>13 20 80</dd>
+            </div>
+            <div>
+              <dt>Health Direct</dt>
+              <dd>1800 022 222</dd>
+            </div>
+          </dl>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
